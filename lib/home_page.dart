@@ -54,7 +54,12 @@ class _HomePageState extends State<HomePage> {
                       Text("Deu errado..."),
                       IconButton(
                         icon: Icon(Icons.home, color: Colors.green, size: 20),
-                        onPressed: (){}
+                        onPressed: (){
+                          setState(() {
+                            cep = "57083030";
+                            opacidade = 0;
+                          });
+                        }
                       )
                     ],
                   );
